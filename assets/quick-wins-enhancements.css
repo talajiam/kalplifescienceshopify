@@ -1,0 +1,258 @@
+/* ===== QUICK WINS ENHANCEMENTS ===== */
+
+/* 1. Vibrant Accent Colors for Buttons & Elements */
+.button,
+button,
+[role="button"] {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  background-size: 200% 200%;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover,
+button:hover,
+[role="button"]:hover {
+  background-position: 100% 0%;
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+  transform: translateY(-3px);
+}
+
+.button:active,
+button:active,
+[role="button"]:active {
+  transform: translateY(-1px);
+}
+
+/* Primary button variant */
+.button.button--primary,
+.button[data-style="primary"] {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-highlight) 100%);
+}
+
+.button.button--primary:hover,
+.button[data-style="primary"]:hover {
+  box-shadow: 0 12px 30px rgba(255, 107, 53, 0.4);
+}
+
+/* Secondary button variant */
+.button.button--secondary,
+.button[data-style="secondary"] {
+  background: linear-gradient(135deg, var(--accent-secondary) 0%, var(--accent-primary) 100%);
+}
+
+.button.button--secondary:hover,
+.button[data-style="secondary"]:hover {
+  box-shadow: 0 12px 30px rgba(255, 107, 53, 0.4);
+}
+
+/* ===== 2. BADGE STYLING WITH PULSE ANIMATION ===== */
+
+.product-card__badge,
+.badge,
+[data-badge] {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-highlight));
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.25);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.product-card__badge--new {
+  background: linear-gradient(135deg, var(--accent-highlight), #FF8C42);
+}
+
+.product-card__badge--sale {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-highlight));
+}
+
+.product-card__badge--bestseller {
+  background: linear-gradient(135deg, var(--accent-highlight), var(--accent-primary));
+}
+
+/* ===== 3. ENHANCED CARD SHADOWS ===== */
+
+.product-card,
+.collection-card,
+.resource-card {
+  box-shadow: var(--shadow-md);
+}
+
+.product-card:hover,
+.collection-card:hover,
+.resource-card:hover {
+  box-shadow: var(--shadow-xl) !important;
+}
+
+/* Glass morphism effect on hover */
+.product-card:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(4px);
+}
+
+/* ===== 4. GRADIENT TEXT ON HEADINGS ===== */
+
+/* Target headings in hero sections and featured areas */
+.hero h1,
+.hero h2,
+.hero h3,
+.featured-section h1,
+.featured-section h2,
+.featured-section h3,
+.section:not(.hero) > h2,
+.section:not(.hero) > h3,
+[data-gradient-text] {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-highlight) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Product title gradient */
+.product-card__title,
+.product-title,
+h1.product-title,
+.featured-product-section h2 {
+  background: linear-gradient(135deg, var(--accent-secondary) 0%, var(--accent-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Product card heading gradient */
+.product-card h3,
+.product-card h4,
+.product-card h5 {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, #FF8C00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== 5. BUTTON RIPPLE EFFECT ENHANCEMENT ===== */
+
+.button,
+button,
+[role="button"],
+a.button,
+a[role="button"] {
+  position: relative;
+  overflow: hidden;
+}
+
+.button::after,
+button::after,
+[role="button"]::after,
+a.button::after,
+a[role="button"]::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.button:active::after,
+button:active::after,
+[role="button"]:active::after,
+a.button:active::after,
+a[role="button"]:active::after {
+  animation: ripple 0.6s ease-out;
+}
+
+/* ===== 6. ADDITIONAL HOVER EFFECTS ===== */
+
+/* Image zoom on product cards */
+.product-card__image,
+.collection-card__image,
+.resource-card__image {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card:hover .product-card__image,
+.collection-card:hover .collection-card__image,
+.resource-card:hover .resource-card__image {
+  transform: scale(1.08);
+}
+
+/* CTA button animation */
+.cta-button,
+.button.cta,
+[data-cta] {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cta-button::before,
+.button.cta::before,
+[data-cta]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+}
+
+.cta-button:hover::before,
+.button.cta:hover::before,
+[data-cta]:hover::before {
+  left: 100%;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .product-card__badge,
+  .badge,
+  [data-badge],
+  .button,
+  button,
+  [role="button"] {
+    animation: none;
+  }
+  
+  .product-card:hover,
+  .collection-card:hover,
+  .resource-card:hover {
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .button,
+  button,
+  [role="button"] {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .product-card__badge,
+  .badge,
+  [data-badge] {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}

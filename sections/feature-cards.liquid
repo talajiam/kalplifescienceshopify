@@ -1,0 +1,144 @@
+{%- comment -%}
+  Feature Cards Section
+  Displays feature cards with icons for benefits like Free Shipping, Quick Payment, etc.
+{%- endcomment -%}
+
+{%- liquid
+  assign cards = section.blocks
+-%}
+
+<div class="shopify-section section section--padding">
+  <div class="container">
+    {%- if section.settings.show_section_title -%}
+      <h2 class="section-title section-title--center section-title--margin-bottom">
+        {{ section.settings.section_title }}
+      </h2>
+    {%- endif -%}
+
+    <div class="feature-cards">
+      {%- for block in cards -%}
+        <div class="feature-card" {{ block.shopify_attributes }}>
+          {%- if block.settings.icon != blank -%}
+            <div class="feature-card__icon">
+              {%- if block.settings.custom_icon != blank -%}
+                <img src="{{ block.settings.custom_icon | img_url: '100x100' }}" alt="{{ block.settings.title }}" style="width: 80%; height: 80%; object-fit: contain;">
+              {%- else -%}
+                {{ block.settings.icon }}
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          
+          <h3 class="feature-card__title">{{ block.settings.title }}</h3>
+          <p class="feature-card__description">{{ block.settings.description }}</p>
+          
+          {%- if block.settings.link_text != blank and block.settings.link_url != blank -%}
+            <a href="{{ block.settings.link_url }}" class="button button--secondary" style="margin-top: 1rem; display: inline-block;">
+              {{ block.settings.link_text }}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Feature Cards",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_section_title",
+      "label": "Show section title",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section title",
+      "default": "Why Choose Us"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_card",
+      "name": "Feature Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (emoji)",
+          "default": "✓"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon",
+          "label": "Custom Icon Image (optional)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Add your feature description here</p>"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL (optional)"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link text (optional)",
+          "default": "Learn More"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature Cards",
+      "blocks": [
+        {
+          "type": "feature_card",
+          "settings": {
+            "icon": "🚚",
+            "title": "Free Shipping",
+            "description": "Orders Over ₹500"
+          }
+        },
+        {
+          "type": "feature_card",
+          "settings": {
+            "icon": "💳",
+            "title": "Quick Payment",
+            "description": "100% Secure Payment"
+          }
+        },
+        {
+          "type": "feature_card",
+          "settings": {
+            "icon": "📞",
+            "title": "24/7 Support",
+            "description": "Ready For You"
+          }
+        },
+        {
+          "type": "feature_card",
+          "settings": {
+            "icon": "↩️",
+            "title": "Money Return",
+            "description": "Back Under 7 Days"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

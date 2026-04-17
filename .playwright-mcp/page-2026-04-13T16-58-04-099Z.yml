@@ -1,0 +1,192 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#MainContent"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - heading "Kalplife science" [level=1] [ref=e6]
+      - generic [ref=e8]:
+        - navigation [ref=e12]:
+          - list [ref=e14]:
+            - generic:
+              - link "Home" [ref=e15] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e16]: Home
+              - link "Catalog" [ref=e17] [cursor=pointer]:
+                - /url: /collections/all
+                - generic [ref=e18]: Catalog
+              - link "Contact" [ref=e19] [cursor=pointer]:
+                - /url: /pages/contact
+                - generic [ref=e20]: Contact
+              - link "Blog" [ref=e21] [cursor=pointer]:
+                - /url: /blogs/protein
+                - generic [ref=e22]: Blog
+              - link "About Us" [ref=e23] [cursor=pointer]:
+                - /url: /pages/about-us
+                - generic [ref=e24]: About Us
+        - generic [ref=e25]:
+          - button "Search" [ref=e27] [cursor=pointer]:
+            - generic:
+              - img
+          - generic [ref=e28]:
+            - button "Account" [ref=e30] [cursor=pointer]:
+              - img [ref=e32]
+            - button "Cart" [ref=e36] [cursor=pointer]:
+              - generic [ref=e37]:
+                - generic:
+                  - img
+                - generic [ref=e38]:
+                  - status:
+                    - generic [ref=e40]: "Total items in cart: 0"
+  - main [ref=e41]:
+    - generic [ref=e44]:
+      - link [ref=e45] [cursor=pointer]:
+        - /url: /products/creatine-monohydrate
+      - generic:
+        - generic:
+          - img
+    - generic [ref=e51]:
+      - heading "Premium formulations crafted by international nutritionist ." [level=1] [ref=e53]:
+        - strong [ref=e54]: Premium formulations crafted by international nutritionist .
+      - paragraph [ref=e56]:
+        - text: You put in the work; we provide the edge.
+        - strong [ref=e57]: Muscle Surge
+        - text: is the ultimate catalyst for those who refuse to settle for average. whether you are crushing a PR or recovering from a grueling session, our advanced formula ensures you stay at the peak of your game. Powered by the innovation of Kalp Life Science, this is the strength you can feel.
+      - generic [ref=e58]:
+        - heading "Engineered for Growth. Backed by Science." [level=2] [ref=e59]:
+          - strong [ref=e60]: Engineered for Growth. Backed by Science.
+        - heading "Experience the precision of Muscle Surge—where pharmaceutical-grade quality meets elite athletic performance." [level=2] [ref=e61]:
+          - text: Experience the precision of
+          - strong [ref=e62]: Muscle Surge
+          - text: —where pharmaceutical-grade quality meets elite athletic performance.
+        - heading "At Kalp Life Science, we believe your body deserves the best fuel. Muscle Surge isn’t just another supplement; it is a formulation born from rigorous research and passion for human potential. Designed to accelerate hypertrophy and optimize recovery, Muscle Surge delivers clean, potent nutrition without the fillers." [level=2] [ref=e63]:
+          - text: At Kalp Life Science, we believe your body deserves the best fuel.
+          - strong [ref=e64]: Muscle Surge
+          - text: isn’t just another supplement; it is a formulation born from rigorous research and passion for human potential. Designed to accelerate hypertrophy and optimize recovery, Muscle Surge delivers clean, potent nutrition without the fillers.
+      - generic [ref=e65]:
+        - heading "Highlighting the Powerful ingredients" [level=2] [ref=e68]
+        - generic [ref=e70]:
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - img [ref=e74]
+            - listitem [ref=e106]:
+              - heading "Lab Certified Protein" [level=2] [ref=e108]:
+                - text: Lab Certified
+                - strong [ref=e109]: Protein
+          - list [ref=e110]:
+            - listitem [ref=e111]:
+              - img [ref=e113]
+            - listitem [ref=e126]:
+              - heading "Traceable Ingredients" [level=2] [ref=e128]:
+                - text: Traceable
+                - strong [ref=e129]: Ingredients
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - img [ref=e133]
+            - listitem [ref=e141]:
+              - heading "Fuel up Your Fitness goals" [level=2] [ref=e143]:
+                - text: Fuel up Your
+                - strong [ref=e144]: Fitness goals
+          - list [ref=e145]:
+            - listitem [ref=e146]:
+              - img [ref=e148]
+            - listitem [ref=e163]:
+              - heading "Delicious Flavored" [level=2] [ref=e165]:
+                - text: Delicious
+                - strong [ref=e166]: Flavored
+    - generic [ref=e169]:
+      - generic:
+        - generic:
+          - img
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - heading "Premium whey protein" [level=2]
+            - generic:
+              - paragraph: Crafted for muscle growth and optimal recovery.
+            - link "Shop now" [ref=e170] [cursor=pointer]:
+              - /url: /collections/all
+    - generic [ref=e175]:
+      - generic [ref=e176]:
+        - paragraph [ref=e177]:
+          - strong [ref=e178]: "Key Benefits:"
+        - list [ref=e179]:
+          - listitem [ref=e180]:
+            - strong [ref=e181]: "Clinical Purity:"
+            - text: Sourced with the highest standards of safety and efficacy.
+        - list [ref=e182]:
+          - listitem [ref=e183]:
+            - strong [ref=e184]: "Optimized Absorption:"
+            - text: Bio-available ingredients ensure your muscles get the fuel they need, fast.
+        - list [ref=e185]:
+          - listitem [ref=e186]:
+            - strong [ref=e187]: "Zero Compromise:"
+            - text: No banned substances, just pure performance.
+      - link "Shop now →" [ref=e188] [cursor=pointer]:
+        - /url: /collections/all
+    - generic [ref=e191]:
+      - generic:
+        - generic:
+          - img
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - heading "Support muscle growth" [level=2]
+            - generic:
+              - paragraph: Nourish your body for optimal results.
+            - link "Shop now" [ref=e192] [cursor=pointer]:
+              - /url: /collections/all
+  - generic [ref=e199]:
+    - generic [ref=e201]:
+      - generic [ref=e203]:
+        - paragraph [ref=e205]: Shop
+        - group [ref=e207]:
+          - list [ref=e209]:
+            - listitem [ref=e210]:
+              - link "Home" [ref=e211] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e212]:
+              - link "Catalog" [ref=e213] [cursor=pointer]:
+                - /url: /collections/all
+            - listitem [ref=e214]:
+              - link "Contact" [ref=e215] [cursor=pointer]:
+                - /url: /pages/contact
+            - listitem [ref=e216]:
+              - link "Blog" [ref=e217] [cursor=pointer]:
+                - /url: /blogs/protein
+            - listitem [ref=e218]:
+              - link "About Us" [ref=e219] [cursor=pointer]:
+                - /url: /pages/about-us
+      - generic [ref=e221]:
+        - paragraph [ref=e223]: Connect
+        - generic [ref=e225]:
+          - link "Facebook" [ref=e226] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61581028501770
+          - link "Instagram" [ref=e227] [cursor=pointer]:
+            - /url: https://www.instagram.com/musclesurge_kalplifescience
+          - link "TikTok" [disabled] [ref=e228]
+    - generic [ref=e230]:
+      - paragraph [ref=e232]: Join our community
+      - generic [ref=e235]:
+        - generic [ref=e236]: Email
+        - textbox "Email" [ref=e237]:
+          - /placeholder: Email address
+        - button "Sign up" [ref=e238]:
+          - img [ref=e239]
+  - generic [ref=e244]:
+    - generic [ref=e246]:
+      - text: © 2026
+      - link "Kalplife science" [ref=e247] [cursor=pointer]:
+        - /url: /
+      - text: ","
+      - link "Powered by Shopify" [ref=e248] [cursor=pointer]:
+        - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+    - button "Terms and Policies" [ref=e250] [cursor=pointer]
+  - generic "Shopify online store chat" [ref=e251]:
+    - button "Chat" [ref=e253] [cursor=pointer]:
+      - img [ref=e254]
+      - generic [ref=e256]: Chat
+  - generic [ref=e258] [cursor=pointer]:
+    - img "Icon" [ref=e260]
+    - generic [ref=e261]: Our Reviews
