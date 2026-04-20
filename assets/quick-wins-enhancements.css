@@ -1,10 +1,10 @@
 /* ===== QUICK WINS ENHANCEMENTS ===== */
 
 /* 1. Vibrant Accent Colors for Buttons & Elements */
-.button,
-button,
-[role="button"] {
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+.button:not(.header-actions__action),
+button:not(.header-actions__action),
+[role="button"]:not(.header-actions__action) {
+  /*background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));*/
   background-size: 200% 200%;
   color: white;
   border: none;
@@ -15,17 +15,17 @@ button,
   transition: all 0.3s ease;
 }
 
-.button:hover,
-button:hover,
-[role="button"]:hover {
+.button:not(.header-actions__action):hover,
+button:not(.header-actions__action):hover,
+[role="button"]:not(.header-actions__action):hover {
   background-position: 100% 0%;
-  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
   transform: translateY(-3px);
 }
 
-.button:active,
-button:active,
-[role="button"]:active {
+.button:not(.header-actions__action):active,
+button:not(.header-actions__action):active,
+[role="button"]:not(.header-actions__action):active {
   transform: translateY(-1px);
 }
 

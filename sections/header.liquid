@@ -730,23 +730,36 @@
     transition: opacity var(--animation-speed) var(--animation-easing);
   }
 
-  /* Header action button styles */
+  /* Header action button styles - Override global button styles */
   .header-actions__action {
     --button-color: var(--color-foreground);
+    color: var(--color-foreground) !important;
 
     cursor: pointer;
     display: flex;
     justify-content: center;
   }
 
+  .header-actions__action.button {
+    color: var(--color-foreground) !important;
+  }
+
+  .header-actions__action button,
+  button.header-actions__action {
+    color: var(--color-foreground) !important;
+  }
+
   .header-actions__action .svg-wrapper {
     height: var(--button-size);
     width: var(--button-size);
+    color: inherit;
   }
 
   .header-actions__action svg {
     width: var(--icon-size-md);
     height: var(--icon-size-md);
+    color: inherit;
+    stroke: currentColor;
   }
 
   /* Set header paddings based on height setting */
